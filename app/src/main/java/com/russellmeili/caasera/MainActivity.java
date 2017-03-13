@@ -1,5 +1,6 @@
 package com.russellmeili.caasera;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     EditText edtLoginName;
     EditText edtPassword;
@@ -27,15 +28,22 @@ public class MainActivity extends AppCompatActivity {
     public void btnLoginOnClick(View v) {
         Log.i("CLICK", "Login button was clicked.");
         Log.i("CLICK", edtLoginName.getText().toString());
-        Toast.makeText(this, "You successfully Logged in: " +
+        ToastIt("You successfully Logged in: " +
                 edtLoginName.getText().toString() + " " +
-                chbLoggedIn.isChecked(), Toast.LENGTH_LONG).show();
+                chbLoggedIn.isChecked());
+
+        startActivity(new Intent(this, Landing1.class));
     }
+
 
     public void btnCancelOnClick(View v) {
         Log.i("CLICK", "Cancel button was clicked.");
         edtLoginName.setText("");
         edtPassword.setText("");
         Toast.makeText(this, "You successfully canceled login", Toast.LENGTH_LONG).show();
+    }
+
+    public void switchToBMIOnClick(View v) {
+        startActivity(new Intent(this, BMIActivity.class));
     }
 }

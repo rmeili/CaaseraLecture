@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BMIActivity" />
+        <activity android:name=".Landing1" />
+        <activity android:name=".Landing2" />
+        <activity android:name=".Landing3" />
+        <activity android:name=".Landing4" />
+        <activity android:name=".Landing5"></activity>
     </application>
 
 </manifest>
