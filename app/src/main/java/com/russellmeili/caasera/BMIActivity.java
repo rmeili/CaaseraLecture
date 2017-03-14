@@ -1,5 +1,6 @@
 package com.russellmeili.caasera;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.GestureDetectorCompat;
@@ -12,11 +13,19 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class BMIActivity extends BaseActivity {
+    TextView txtWebContent = null;
 
     EditText edtHeight, edtWeight;
     TextView lblBMI, lblFatString;
@@ -29,6 +38,25 @@ public class BMIActivity extends BaseActivity {
         edtWeight = (EditText) findViewById(R.id.edtWeight);
         lblBMI = (TextView) findViewById(R.id.txtBMI);
         lblFatString = (TextView) findViewById(R.id.lblFatString);
+        txtWebContent = (TextView) findViewById(R.id.txtWebContent);
+
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://caasera.azurewebsites.net/api/1.0/student";
+        // Request a string for the URL
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        txtWebContent.setText("Response: " + response.substring(0, 500));
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        txtWebContent.setText("That didn't work!!!");
+                    }
+                });
+        queue.add(stringRequest);
     }
 
     public void calculateOnClick(View v) {

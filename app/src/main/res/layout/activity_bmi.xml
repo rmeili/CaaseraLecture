@@ -96,4 +96,14 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/btnSaveResults"
         android:onClick="saveResultsOnClick" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWebContent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/txtBMI"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnSaveResults" />
 </RelativeLayout>

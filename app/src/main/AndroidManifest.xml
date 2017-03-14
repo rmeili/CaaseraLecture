@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.russellmeili.caasera">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +22,7 @@
         <activity android:name=".Landing2" />
         <activity android:name=".Landing3" />
         <activity android:name=".Landing4" />
-        <activity android:name=".Landing5"></activity>
+        <activity android:name=".Landing5" />
     </application>
 
 </manifest>
