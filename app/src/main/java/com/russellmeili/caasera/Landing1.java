@@ -19,6 +19,10 @@ public class Landing1 extends BaseActivity {
         finish();
     }
 
+    public void btnFreeTrialOnClick(View v) {
+        startActivity(new Intent(getApplicationContext(), FreeTrial.class));
+    }
+
     public void btnNext(View v) {
         Log.i("CLICK", "Next button was clicked.");
 

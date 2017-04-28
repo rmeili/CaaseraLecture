@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Caasera</string>
+    <string name="didntWork">Eso no funcionó !!!</string>
+    <string name="loginButtonClicked">Se ha hecho clic en el botón de inicio de sesión.</string>
+    <string name="idiotString">Eres un idiota, por favor ingresa credenciales apropiadas</string>
+    <string name="lessons">Lecciones</string>
+    <string name="everythingCAASera">Su cuenta para todo CAASera</string>
+    <string name="cancel">Cancelar</string>
+    <string name="exercises">Ejercicios</string>
+    <string name="feedback">Realimentación</string>
+    <string name="freeTrial">Prueba gratis</string>
+    <string name="keepLoggedIn">Mantenme conectado</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="loginError">\"Error de inicio de sesión;\"</string>
+    <string name="password">Contraseña</string>
+    <string name="successfulLogin">\"\"Has iniciado sesión con éxito: %1$s %2$b\"</string>
+    <string name="username">Nombre de usuario</string>
+</resources>

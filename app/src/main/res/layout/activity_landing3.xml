@@ -12,7 +12,7 @@
     tools:context="com.russellmeili.caasera.Landing3">
 
     <Button
-        android:text="Free Trial"
+        android:text="@string/freeTrial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
@@ -21,7 +21,7 @@
         android:layout_marginEnd="15dp" />
 
     <Button
-        android:text="Login"
+        android:text="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button4"
@@ -38,23 +38,5 @@
         android:layout_above="@+id/button3"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="13dp" />
-
-    <Button
-        android:text="Prev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPrev"
-        android:onClick="btnPrev"
-        android:layout_above="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
-
-    <Button
-        android:text="Next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button9"
-        android:onClick="btnNext"
-        android:layout_above="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
 
 </RelativeLayout>

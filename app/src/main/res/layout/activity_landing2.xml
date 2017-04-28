@@ -12,7 +12,7 @@
     tools:context="com.russellmeili.caasera.Landing2">
 
     <Button
-        android:text="Free Trial"
+        android:text="@string/freeTrial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
@@ -64,30 +64,12 @@
         android:layout_alignEnd="@+id/txtHeader" />
 
     <Button
-        android:text="Next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnNext"
-        android:onClick="btnNext"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="Login"
+        android:text="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:onClick="btnLoginOnClick "
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/txtHeader" />
-
-    <Button
-        android:text="Prev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPrev"
-        android:onClick="btnPrev"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

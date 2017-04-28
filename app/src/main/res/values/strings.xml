@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Caasera</string>
+    <string name="loginButtonClicked">Login button was clicked.</string>
+    <string name="didntWork">That didn\'t work!!!</string>
+    <string name="idiotString">You are an idiot, please enter proper credentials</string>
+    <string name="everythingCAASera">Your account for everything CAASera</string>
+    <string name="lessons">Lessons</string>
+    <string name="successfulLogin">"You successfully Logged in: %1$s %2$b"</string>
+    <string name="loginError">"Login error; "</string>
+    <string name="login">Login</string>
+    <string name="freeTrial">Free Trial</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="keepLoggedIn">Keep Me Logged In</string>
+    <string name="exercises">Exercises</string>
+    <string name="feedback">Feedback</string>
+    <string-array name="countries_array">
+        <item>America</item>
+        <item>Canada</item>
+        <item>Spain</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="dept_array">
+        <item>Vegetable</item>
+        <item>Fruits</item>
+        <item>Grocery</item>
+        <item>Electronics</item>
+        <item>Books</item>
+        <item>Language</item>
+    </string-array>
+
+
 </resources>

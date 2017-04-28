@@ -17,15 +17,21 @@ public class BaseActivity extends AppCompatActivity {
 
     public GestureDetectorCompat gestureObject;
     protected Class[] ladingPages = {
+            LessonHomeActivity.class,
             MainActivity.class,
             Landing1.class,
             Landing2.class,
             Landing3.class,
             Landing4.class,
             Landing5.class,
-            BMIActivity.class,
+            //LessonHomeActivity.class,
+            FreeTrial.class
     };
     static int currentPage = 0;
+    static String username = "";
+    static String password = "";
+    static StudentInfo studentInfo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

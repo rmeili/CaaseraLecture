@@ -23,6 +23,10 @@
         <activity android:name=".Landing3" />
         <activity android:name=".Landing4" />
         <activity android:name=".Landing5" />
+        <activity android:name=".FreeTrial" />
+        <activity android:name=".LessonHomeActivity" />
+        <activity android:name=".Child_row" />
+        <activity android:name=".Group_heading"></activity>
     </application>
 
 </manifest>
